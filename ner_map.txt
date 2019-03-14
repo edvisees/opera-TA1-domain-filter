@@ -1,0 +1,10 @@
+per Person
+gpe GeopoliticalEntity
+org Organization
+loc Location
+fac Facility
+veh Vehicle
+wea Weapon
+time Time
+url URL
+title Title

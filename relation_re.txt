@@ -1,0 +1,123 @@
+genafl_apora
+GeneralAffiliation.APORA_Affiliate
+WEA VEH FAC Commodity
+genafl_apora
+GeneralAffiliation.APORA_Affiliation
+ORG PER GPE Sides LOC
+genafl_more
+GeneralAffiliation.MORE_Affiliation
+Sides PER LOC GPE
+genafl_more
+GeneralAffiliation.MORE_Person
+PER
+genafl_pora
+GeneralAffiliation.OPRA_Affiliation
+Sides PER ORG
+genafl_pora
+GeneralAffiliation.OPRA_Organization
+ORG
+genafl_orgweb
+GeneralAffiliation.OrganizationWebsite_Organization
+ORG
+genafl_orgweb
+GeneralAffiliation.OrganizationWebsite_Website
+URL
+genafl_perage
+GeneralAffiliation.PersonAge_Age
+Age
+genafl_perage
+GeneralAffiliation.PersonAge_Person
+PER
+genafl_spon
+GeneralAffiliation.Sponsorship_Entity
+ORG LOC GPE
+genafl_spon
+GeneralAffiliation.Sponsorship_Sponsor
+Sides ORG LOC GPE
+orgafl_empmem
+OrganizationAffiliation.EmploymentMembership_Employee
+PER
+orgafl_empmem
+OrganizationAffiliation.EmploymentMembership_Organization
+ORG GPE
+orgafl_found
+OrganizationAffiliation.Founder_Founder
+PER ORG GPE
+orgafl_found
+OrganizationAffiliation.Founder_Organization
+ORG
+orgafl_invshar
+OrganizationAffiliation.InvestorShareholder_InvestorShareholder
+PER ORG GPE
+orgafl_invshar
+OrganizationAffiliation.InvestorShareholder_Organization
+ORG
+orgafl_lead
+OrganizationAffiliation.Leadership_Leader
+PER
+orgafl_lead
+OrganizationAffiliation.Leadership_Organization
+ORG GPE
+orgafl_own
+OrganizationAffiliation.Ownership_Organization
+ORG
+orgafl_own
+OrganizationAffiliation.Ownership_Owner
+PER
+orgafl_stualm
+OrganizationAffiliation.StudentAlum_Organization
+ORG
+orgafl_stualm
+OrganizationAffiliation.StudentAlum_StudentAlum
+PER
+partwhole_membership
+PartWhole.Membership_Member
+ORG GPE
+partwhole_membership
+PartWhole.Membership_Organization
+ORG
+partwhole_subsid
+PartWhole.Subsidiary_Parent
+ORG GPE
+partwhole_subsid
+PartWhole.Subsidiary_Subsidiary
+ORG
+persoc_bus
+PersonalSocial.Business_Person
+PER
+persoc_fam
+PersonalSocial.Family_Person
+PER
+persoc_role
+PersonalSocial.RoleTitle_Person
+PER
+persoc_role
+PersonalSocial.RoleTitle_Title
+TITLE
+persoc_unspc
+PersonalSocial.Unspecified_Person
+PER
+phys_locnear
+Physical.LocatedNear_Entity
+FAC Commodity VEH PER WEA
+phys_locnear
+Physical.LocatedNear_Place
+LOC GPE FAC
+phys_orghq
+Physical.OrganizationHeadquarter_Organization
+ORG
+phys_orghq
+Physical.OrganizationHeadquarter_Place
+LOC GPE FAC
+phys_orglocorig
+Physical.OrganizationLocationOrigin_Organization
+ORG
+phys_orglocorig
+Physical.OrganizationLocationOrigin_Place
+LOC GPE FAC
+phys_resident
+Physical.Resident_Place
+LOC GPE FAC
+phys_resident
+Physical.Resident_Resident
+PER
