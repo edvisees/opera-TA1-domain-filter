@@ -1,4 +1,4 @@
-from sklearn.datasets import fetch_20newsgroups
+#from sklearn.datasets import fetch_20newsgroups
 import os
 import codecs
 import numpy as np
@@ -69,18 +69,18 @@ def filter(content, tfidf, filter):
 	
 	tfidf_feature = tfidf.transform(content)
 	#predict = filter.predict_classes(tfidf_feature)
-        predict = filter.predict(tfidf_feature)
-        predict = predict[:,1]
-        #print predict.shape
-        predict[predict >=0.1] = 1
-        predict[predict < 0.1] = 0
+	predict = filter.predict(tfidf_feature)
+	predict = predict[:,1]
+	#print predict.shape
+	predict[predict >=0.1] = 1
+	predict[predict < 0.1] = 0
 	return predict
 
 def main(data, tfidf, filter_model):
 	domain = filter(data, tfidf, filter_model)
 	return domain
 def load_models(lang):
-	root_path = '/home/xiangk/OPERA/domain_filter'
+	root_path = './resources/xiang/domain_filter'
 	tfidf_path = 'tfidf0{}.pkl'.format(lang)
 	filter_path = '{}_best.hdf5'.format(lang)
 	with open(os.path.join(root_path, tfidf_path)) as f:
