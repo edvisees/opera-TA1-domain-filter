@@ -16,6 +16,8 @@ from langdetect import detect
 from keras.models import load_model
 import argparse
 import xml.etree.ElementTree as ET
+import sys
+import traceback
 
 class Sentence(object):
     def __init__(self, begin, end, index):
@@ -115,7 +117,14 @@ if __name__ == '__main__':
 	in_domain_files = []
 	for file_name in os.listdir(folder_name):
 		#with codecs.open(os.path.join(folder_name, file_name), encoding='utf-8') as f:
-		tree = ET.parse(os.path.join(folder_name, file_name))
+		if not file_name.endswith(".xml"):
+			continue
+		try:
+			tree = ET.parse(os.path.join(folder_name, file_name))
+		except:
+			sys.stderr.write("ERROR: Exception occured while processing " + file_name)
+			traceback.print_exc()
+			continue
 		root = tree.getroot()
 		flag = False
 		sents = []
